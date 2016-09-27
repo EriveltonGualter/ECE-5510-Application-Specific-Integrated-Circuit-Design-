@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/Users/EriveltonDell/Documents/Western Michigan University/ECE 5510/Programs/BinaryCounter/Counter_vhdl.xst" -ofn "C:/Users/EriveltonDell/Documents/Western Michigan University/ECE 5510/Programs/BinaryCounter/Counter_vhdl.syr" 

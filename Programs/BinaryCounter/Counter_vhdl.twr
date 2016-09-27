@@ -1,0 +1,94 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 2
+-n 3 -fastpaths -xml Counter_vhdl.twx Counter_vhdl.ncd -o Counter_vhdl.twr
+Counter_vhdl.pcf
+
+Design file:              Counter_vhdl.ncd
+Physical constraint file: Counter_vhdl.pcf
+Device,package,speed:     xc6slx16,csg324,C,-2 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock CLK
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+CLR         |    1.339(R)|      SLOW  |    0.003(R)|      SLOW  |CLK_BUFGP         |   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
+
+Setup/Hold to clock load
+------------+------------+------------+------------+------------+---------------------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                                 | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s)                | Phase  |
+------------+------------+------------+------------+------------+---------------------------------+--------+
+A           |    1.336(F)|      SLOW  |    0.378(F)|      SLOW  |present_state[4]_PWR_5_o_Mux_57_o|   0.000|
+B           |    0.987(F)|      SLOW  |    0.923(F)|      SLOW  |present_state[4]_PWR_5_o_Mux_57_o|   0.000|
+C           |    0.721(F)|      SLOW  |    0.859(F)|      SLOW  |present_state[4]_PWR_5_o_Mux_57_o|   0.000|
+D           |    0.581(F)|      SLOW  |    0.208(F)|      SLOW  |present_state[4]_PWR_5_o_Mux_57_o|   0.000|
+ENP         |    0.917(F)|      SLOW  |    0.649(F)|      SLOW  |present_state[4]_PWR_5_o_Mux_57_o|   0.000|
+ENT         |    0.827(F)|      SLOW  |    0.315(F)|      SLOW  |present_state[4]_PWR_5_o_Mux_57_o|   0.000|
+------------+------------+------------+------------+------------+---------------------------------+--------+
+
+Clock load to Pad
+------------+-----------------+------------+-----------------+------------+---------------------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                                 | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s)                | Phase  |
+------------+-----------------+------------+-----------------+------------+---------------------------------+--------+
+Qa          |         8.020(F)|      SLOW  |         3.408(F)|      FAST  |present_state[4]_PWR_9_o_Mux_65_o|   0.000|
+Qb          |         8.521(F)|      SLOW  |         3.644(F)|      FAST  |present_state[4]_PWR_9_o_Mux_65_o|   0.000|
+Qc          |         8.020(F)|      SLOW  |         3.408(F)|      FAST  |present_state[4]_PWR_9_o_Mux_65_o|   0.000|
+Qd          |         8.521(F)|      SLOW  |         3.644(F)|      FAST  |present_state[4]_PWR_9_o_Mux_65_o|   0.000|
+------------+-----------------+------------+-----------------+------------+---------------------------------+--------+
+
+Clock to Setup on destination clock CLK
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+load           |         |    2.946|         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock load
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLK            |         |         |    4.700|         |
+---------------+---------+---------+---------+---------+
+
+
+Analysis completed Tue May 20 20:10:22 2014 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 239 MB
+
+
+

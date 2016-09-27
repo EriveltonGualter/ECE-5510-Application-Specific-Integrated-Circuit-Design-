@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "C:/Users/EriveltonDell/Documents/Western Michigan University/ECE 5510/Programs/BinaryCounter/Counter_vhdl.xst" -ofn "C:/Users/EriveltonDell/Documents/Western Michigan University/ECE 5510/Programs/BinaryCounter/Counter_vhdl.syr" 
+xst -intstyle ise -ifn "C:/Users/EriveltonDell/Documents/Western Michigan University/ECE 5510/Programs/BinaryCounter/Counter_vhdl.xst" -ofn "C:/Users/EriveltonDell/Documents/Western Michigan University/ECE 5510/Programs/BinaryCounter/Counter_vhdl.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx16-csg324-2 "Counter_vhdl.ngc" Counter_vhdl.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Counter_vhdl_map.ncd Counter_vhdl.ngd Counter_vhdl.pcf 
+par -w -intstyle ise -ol high -mt off Counter_vhdl_map.ncd Counter_vhdl.ncd Counter_vhdl.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Counter_vhdl.twx Counter_vhdl.ncd -o Counter_vhdl.twr Counter_vhdl.pcf 

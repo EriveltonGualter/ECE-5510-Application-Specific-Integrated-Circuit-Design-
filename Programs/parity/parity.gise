@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="parity.xise"/>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/map.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/par.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/trce.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="netgen"/>
+    <file xil_pn:branch="PostSynthSim" xil_pn:fileType="FILE_NETGEN_REPORT" xil_pn:name="netgen/synthesis/parity_vhdl_synthesis.nlf"/>
+    <file xil_pn:branch="PostSynthSim" xil_pn:fileType="FILE_VHDL" xil_pn:name="netgen/synthesis/parity_vhdl_synthesis.vhd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="parity_vhdl.bld"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="parity_vhdl.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="parity_vhdl.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="parity_vhdl.ncd" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="parity_vhdl.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="parity_vhdl.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="parity_vhdl.ngr"/>
+    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="parity_vhdl.pad"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAR_REPORT" xil_pn:name="parity_vhdl.par" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PCF" xil_pn:name="parity_vhdl.pcf" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="parity_vhdl.prj"/>
+    <file xil_pn:fileType="FILE_TRCE_MISC" xil_pn:name="parity_vhdl.ptwx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="parity_vhdl.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="parity_vhdl.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_TXT_REPORT" xil_pn:name="parity_vhdl.twr" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_XML_REPORT" xil_pn:name="parity_vhdl.twx" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="parity_vhdl.unroutes" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XPI" xil_pn:name="parity_vhdl.xpi"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="parity_vhdl.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="parity_vhdl_envsettings.html"/>
+    <file xil_pn:fileType="FILE_NCD" xil_pn:name="parity_vhdl_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="parity_vhdl_map.map" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="parity_vhdl_map.mrp" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="parity_vhdl_map.ncd" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGM" xil_pn:name="parity_vhdl_map.ngm" xil_pn:subbranch="Map"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="parity_vhdl_map.xrpt"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="parity_vhdl_ngdbuild.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="parity_vhdl_pad.csv" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="parity_vhdl_pad.txt" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="parity_vhdl_par.xrpt"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="parity_vhdl_summary.html"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="parity_vhdl_summary.xml"/>
+    <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="parity_vhdl_usage.xml"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="parity_vhdl_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="planAhead_run_1"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="planAhead_run_2"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1400638529" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1400638529">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1400638529" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="7329223188613479975" xil_pn:start_ts="1400638529">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1400638529" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="6267774644756618741" xil_pn:start_ts="1400638529">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1400638529" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1400638529">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1400638529" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="8788981054507721833" xil_pn:start_ts="1400638529">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1400638529" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="1106364426758808884" xil_pn:start_ts="1400638529">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1400638529" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="823504142992945215" xil_pn:start_ts="1400638529">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1400638538" xil_pn:in_ck="-1024426214990132042" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="-3113486519811648050" xil_pn:start_ts="1400638529">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="parity_vhdl.lso"/>
+      <outfile xil_pn:name="parity_vhdl.ngc"/>
+      <outfile xil_pn:name="parity_vhdl.ngr"/>
+      <outfile xil_pn:name="parity_vhdl.prj"/>
+      <outfile xil_pn:name="parity_vhdl.stx"/>
+      <outfile xil_pn:name="parity_vhdl.syr"/>
+      <outfile xil_pn:name="parity_vhdl.xst"/>
+      <outfile xil_pn:name="parity_vhdl_xst.xrpt"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+    <transform xil_pn:end_ts="1400638123" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-1459600355166764930" xil_pn:start_ts="1400638123">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputAdded"/>
+    </transform>
+    <transform xil_pn:end_ts="1400638668" xil_pn:in_ck="-1024426214990140788" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="153351863613245248" xil_pn:start_ts="1400638661">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="InputAdded"/>
+      <outfile xil_pn:name="_ngo"/>
+      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+      <outfile xil_pn:name="parity_vhdl.bld"/>
+      <outfile xil_pn:name="parity_vhdl.ngd"/>
+      <outfile xil_pn:name="parity_vhdl_ngdbuild.xrpt"/>
+    </transform>
+    <transform xil_pn:end_ts="1400638677" xil_pn:in_ck="-1024426214990140787" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="-3180699873896808002" xil_pn:start_ts="1400638668">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="InputAdded"/>
+      <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
+      <outfile xil_pn:name="parity_vhdl.pcf"/>
+      <outfile xil_pn:name="parity_vhdl_map.map"/>
+      <outfile xil_pn:name="parity_vhdl_map.mrp"/>
+      <outfile xil_pn:name="parity_vhdl_map.ncd"/>
+      <outfile xil_pn:name="parity_vhdl_map.ngm"/>
+      <outfile xil_pn:name="parity_vhdl_map.xrpt"/>
+      <outfile xil_pn:name="parity_vhdl_summary.xml"/>
+      <outfile xil_pn:name="parity_vhdl_usage.xml"/>
+    </transform>
+    <transform xil_pn:end_ts="1400638691" xil_pn:in_ck="-4443354798598948826" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="-1178055513630676559" xil_pn:start_ts="1400638677">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="InputAdded"/>
+      <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
+      <outfile xil_pn:name="parity_vhdl.ncd"/>
+      <outfile xil_pn:name="parity_vhdl.pad"/>
+      <outfile xil_pn:name="parity_vhdl.par"/>
+      <outfile xil_pn:name="parity_vhdl.ptwx"/>
+      <outfile xil_pn:name="parity_vhdl.unroutes"/>
+      <outfile xil_pn:name="parity_vhdl.xpi"/>
+      <outfile xil_pn:name="parity_vhdl_pad.csv"/>
+      <outfile xil_pn:name="parity_vhdl_pad.txt"/>
+      <outfile xil_pn:name="parity_vhdl_par.xrpt"/>
+    </transform>
+    <transform xil_pn:end_ts="1400638691" xil_pn:in_ck="-1024426214990140919" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416184" xil_pn:start_ts="1400638685">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="InputAdded"/>
+      <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
+      <outfile xil_pn:name="parity_vhdl.twr"/>
+      <outfile xil_pn:name="parity_vhdl.twx"/>
+    </transform>
+    <transform xil_pn:end_ts="1400638659" xil_pn:in_ck="-1024426214990140788" xil_pn:name="TRAN_postSynthesisSimModel" xil_pn:prop_ck="6985765161837738568" xil_pn:start_ts="1400638656">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="netgen"/>
+      <outfile xil_pn:name="netgen/synthesis/parity_vhdl_synthesis.nlf"/>
+      <outfile xil_pn:name="netgen/synthesis/parity_vhdl_synthesis.vhd"/>
+    </transform>
+  </transforms>
+
+</generated_project>

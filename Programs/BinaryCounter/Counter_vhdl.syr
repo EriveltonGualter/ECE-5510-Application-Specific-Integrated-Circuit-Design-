@@ -1,0 +1,475 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.12 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.12 secs
+ 
+--> Reading design: Counter_vhdl.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Counter_vhdl.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Counter_vhdl"
+Output Format                      : NGC
+Target Device                      : xc6slx16-2-csg324
+
+---- Source Options
+Top Module Name                    : Counter_vhdl
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "C:\Users\EriveltonDell\Documents\Western Michigan University\ECE 5510\Programs\BinaryCounter\Counter_vhdl.vhd" into library work
+Parsing entity <Counter_vhdl>.
+Parsing architecture <Behavioral> of entity <counter_vhdl>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <Counter_vhdl> (architecture <Behavioral>) from library <work>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <Counter_vhdl>.
+    Related source file is "C:\Users\EriveltonDell\Documents\Western Michigan University\ECE 5510\Programs\BinaryCounter\Counter_vhdl.vhd".
+    Found 5-bit register for signal <present_state>.
+    Found 4x1-bit Read Only RAM for signal <present_state[4]_PWR_13_o_Mux_73_o>
+    Found 32x4-bit Read Only RAM for signal <_n0623>
+WARNING:Xst:737 - Found 1-bit latch for signal <next_state<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <next_state<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <next_state<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <next_state<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <Qd>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <Qc>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <Qb>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <Qa>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <Rco>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <next_state<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Summary:
+	inferred   2 RAM(s).
+	inferred   5 D-type flip-flop(s).
+	inferred  10 Latch(s).
+	inferred  29 Multiplexer(s).
+Unit <Counter_vhdl> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 32x4-bit single-port Read Only RAM                    : 1
+ 4x1-bit single-port Read Only RAM                     : 1
+# Registers                                            : 1
+ 5-bit register                                        : 1
+# Latches                                              : 10
+ 1-bit latch                                           : 10
+# Multiplexers                                         : 29
+ 1-bit 2-to-1 multiplexer                              : 29
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <Counter_vhdl>.
+INFO:Xst:3231 - The small RAM <Mram__n0623> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 4-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <present_state> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3231 - The small RAM <Mram_present_state[4]_PWR_13_o_Mux_73_o> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 4-word x 1-bit                      |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <(present_state<4>,present_state<1>)> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <Counter_vhdl> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 32x4-bit single-port distributed Read Only RAM        : 1
+ 4x1-bit single-port distributed Read Only RAM         : 1
+# Registers                                            : 5
+ Flip-Flops                                            : 5
+# Multiplexers                                         : 29
+ 1-bit 2-to-1 multiplexer                              : 29
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <Counter_vhdl> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Counter_vhdl, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 5
+ Flip-Flops                                            : 5
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : Counter_vhdl.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 26
+#      INV                         : 1
+#      LUT2                        : 4
+#      LUT3                        : 1
+#      LUT5                        : 6
+#      LUT6                        : 13
+#      MUXF7                       : 1
+# FlipFlops/Latches                : 15
+#      FDR                         : 5
+#      LD                          : 10
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 13
+#      IBUF                        : 8
+#      OBUF                        : 5
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx16csg324-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              10  out of  18224     0%  
+ Number of Slice LUTs:                   25  out of   9112     0%  
+    Number used as Logic:                25  out of   9112     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     29
+   Number with an unused Flip Flop:      19  out of     29    65%  
+   Number with an unused LUT:             4  out of     29    13%  
+   Number of fully used LUT-FF pairs:     6  out of     29    20%  
+   Number of unique control sets:         4
+
+IO Utilization: 
+ Number of IOs:                          14
+ Number of bonded IOBs:                  14  out of    232     6%  
+    IOB Flip Flops/Latches:               5
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+------------------------------------------------------------------------------------+------------------------+-------+
+Clock Signal                                                                        | Clock buffer(FF name)  | Load  |
+------------------------------------------------------------------------------------+------------------------+-------+
+present_state[4]_PWR_5_o_Mux_57_o(Mmux_present_state[4]_PWR_5_o_Mux_57_o11:O)       | NONE(*)(next_state_0)  | 5     |
+CLK                                                                                 | BUFGP                  | 5     |
+present_state[4]_PWR_9_o_Mux_65_o(Mmux_present_state[4]_PWR_9_o_Mux_65_o11:O)       | NONE(*)(Qc)            | 4     |
+Mram_present_state[4]_PWR_13_o_Mux_73_o(Mram_present_state[4]_PWR_13_o_Mux_73_o11:O)| NONE(*)(Rco)           | 1     |
+------------------------------------------------------------------------------------+------------------------+-------+
+(*) These 3 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: 4.001ns
+   Maximum output required time after clock: 4.174ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'present_state[4]_PWR_5_o_Mux_57_o'
+  Total number of paths / destination ports: 27 / 5
+-------------------------------------------------------------------------
+Offset:              4.001ns (Levels of Logic = 3)
+  Source:            ENP (PAD)
+  Destination:       next_state_0 (LATCH)
+  Destination Clock: present_state[4]_PWR_5_o_Mux_57_o falling
+
+  Data Path: ENP to next_state_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             4   1.328   0.912  ENP_IBUF (ENP_IBUF)
+     LUT2:I0->O            3   0.250   1.221  GND_3_o_GND_3_o_mux_35_OUT<2>1 (GND_3_o_GND_3_o_mux_35_OUT<2>)
+     LUT6:I0->O            1   0.254   0.000  Mmux_present_state[4]_X_3_o_Mux_60_o1 (present_state[4]_X_3_o_Mux_60_o)
+     LD:D                      0.036          next_state_1
+    ----------------------------------------
+    Total                      4.001ns (1.868ns logic, 2.133ns route)
+                                       (46.7% logic, 53.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
+  Total number of paths / destination ports: 5 / 5
+-------------------------------------------------------------------------
+Offset:              3.563ns (Levels of Logic = 2)
+  Source:            CLR (PAD)
+  Destination:       present_state_0 (FF)
+  Destination Clock: CLK rising
+
+  Data Path: CLR to present_state_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.328   0.681  CLR_IBUF (CLR_IBUF)
+     INV:I->O              5   0.255   0.840  CLR_inv1_INV_0 (CLR_inv)
+     FDR:R                     0.459          present_state_0
+    ----------------------------------------
+    Total                      3.563ns (2.042ns logic, 1.521ns route)
+                                       (57.3% logic, 42.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Mram_present_state[4]_PWR_13_o_Mux_73_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              2.526ns (Levels of Logic = 2)
+  Source:            ENP (PAD)
+  Destination:       Rco (LATCH)
+  Destination Clock: Mram_present_state[4]_PWR_13_o_Mux_73_o falling
+
+  Data Path: ENP to Rco
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             4   1.328   0.912  ENP_IBUF (ENP_IBUF)
+     LUT2:I0->O            1   0.250   0.000  ENP_INV_3_o1 (ENP_INV_3_o)
+     LD:D                      0.036          Rco
+    ----------------------------------------
+    Total                      2.526ns (1.614ns logic, 0.912ns route)
+                                       (63.9% logic, 36.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Mram_present_state[4]_PWR_13_o_Mux_73_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              4.174ns (Levels of Logic = 1)
+  Source:            Rco (LATCH)
+  Destination:       Rco (PAD)
+  Source Clock:      Mram_present_state[4]_PWR_13_o_Mux_73_o falling
+
+  Data Path: Rco to Rco
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.581   0.681  Rco (Rco_OBUF)
+     OBUF:I->O                 2.912          Rco_OBUF (Rco)
+    ----------------------------------------
+    Total                      4.174ns (3.493ns logic, 0.681ns route)
+                                       (83.7% logic, 16.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'present_state[4]_PWR_9_o_Mux_65_o'
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Offset:              4.174ns (Levels of Logic = 1)
+  Source:            Qa (LATCH)
+  Destination:       Qa (PAD)
+  Source Clock:      present_state[4]_PWR_9_o_Mux_65_o falling
+
+  Data Path: Qa to Qa
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.581   0.681  Qa (Qa_OBUF)
+     OBUF:I->O                 2.912          Qa_OBUF (Qa)
+    ----------------------------------------
+    Total                      4.174ns (3.493ns logic, 0.681ns route)
+                                       (83.7% logic, 16.3% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock CLK
+---------------------------------+---------+---------+---------+---------+
+                                 | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                     |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------------------------+---------+---------+---------+---------+
+present_state[4]_PWR_5_o_Mux_57_o|         |    1.336|         |         |
+---------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock present_state[4]_PWR_5_o_Mux_57_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLK            |         |         |    3.691|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock present_state[4]_PWR_9_o_Mux_65_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLK            |         |         |    2.454|         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 14.00 secs
+Total CPU time to Xst completion: 13.48 secs
+ 
+--> 
+
+Total memory usage is 221004 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   10 (   0 filtered)
+Number of infos    :    3 (   0 filtered)
+

@@ -1,0 +1,32 @@
+
+restart 
+
+
+force Sel 2'h0 
+force A 0
+force B 0
+force C 0
+force D 0
+
+run 10ns
+
+force A 1
+run 10ns
+
+force Sel 2'h1
+run 10ns
+
+force B 1
+run 10ns
+
+force Sel 2'h2
+run 10ns
+
+force C 1
+run 10ns
+
+force Sel 2'h3
+run 10ns
+
+force D 1
+run 10ns

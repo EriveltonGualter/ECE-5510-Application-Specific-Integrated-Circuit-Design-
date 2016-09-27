@@ -1,0 +1,884 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.20 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.20 secs
+ 
+--> Reading design: BLACKJACK.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "BLACKJACK.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "BLACKJACK"
+Output Format                      : NGC
+Target Device                      : xc6slx16-2-csg324
+
+---- Source Options
+Top Module Name                    : BLACKJACK
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "C:\Users\EriveltonDell\Documents\Western Michigan University\ECE 5510\Programs\BlackJackGame\BlackJack_vhdl.vhd" into library work
+Parsing entity <BLACKJACK>.
+Parsing architecture <Behavioral> of entity <blackjack>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <BLACKJACK> (architecture <Behavioral>) from library <work>.
+INFO:HDLCompiler:679 - "C:\Users\EriveltonDell\Documents\Western Michigan University\ECE 5510\Programs\BlackJackGame\BlackJack_vhdl.vhd" Line 866. Case statement is complete. others clause is never selected
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <BLACKJACK>.
+    Related source file is "C:\Users\EriveltonDell\Documents\Western Michigan University\ECE 5510\Programs\BlackJackGame\BlackJack_vhdl.vhd".
+    Found 5-bit register for signal <CSTATE>.
+    Found 4-bit register for signal <counter>.
+    Found 26-bit register for signal <CLKDIV>.
+    Found 1-bit register for signal <SMCLK>.
+    Found 1-bit register for signal <RGCLK>.
+    Found 1-bit register for signal <DBCLK>.
+    Found 1-bit register for signal <SGCLK>.
+    Found 2-bit register for signal <SEL>.
+    Found 4-bit register for signal <SHIFTR2>.
+    Found 1-bit register for signal <DBSTAND>.
+    Found 4-bit register for signal <SHIFTR1>.
+    Found 1-bit register for signal <DBHIT>.
+    Found 4-bit register for signal <SHIFTR>.
+    Found 1-bit register for signal <DBDEAL>.
+    Found 1-bit register for signal <DISSTAT>.
+    Found 1-bit register for signal <DSTAND>.
+    Found 1-bit register for signal <PSTAND>.
+    Found 16-bit register for signal <DISPLAYDATA>.
+    Found 2-bit register for signal <PACECARD>.
+    Found 2-bit register for signal <DACECARD>.
+    Found 3-bit register for signal <GAMEDECK<12>>.
+    Found 3-bit register for signal <GAMEDECK<11>>.
+    Found 3-bit register for signal <GAMEDECK<10>>.
+    Found 3-bit register for signal <GAMEDECK<9>>.
+    Found 3-bit register for signal <GAMEDECK<8>>.
+    Found 3-bit register for signal <GAMEDECK<7>>.
+    Found 3-bit register for signal <GAMEDECK<6>>.
+    Found 3-bit register for signal <GAMEDECK<5>>.
+    Found 3-bit register for signal <GAMEDECK<4>>.
+    Found 3-bit register for signal <GAMEDECK<3>>.
+    Found 3-bit register for signal <GAMEDECK<2>>.
+    Found 3-bit register for signal <GAMEDECK<1>>.
+    Found 3-bit register for signal <GAMEDECK<0>>.
+    Found 4-bit register for signal <PLAYERCARDS<4>>.
+    Found 4-bit register for signal <PLAYERCARDS<3>>.
+    Found 4-bit register for signal <PLAYERCARDS<2>>.
+    Found 4-bit register for signal <PLAYERCARDS<1>>.
+    Found 4-bit register for signal <PLAYERCARDS<0>>.
+    Found 4-bit register for signal <DEALERCARDS<4>>.
+    Found 4-bit register for signal <DEALERCARDS<3>>.
+    Found 4-bit register for signal <DEALERCARDS<2>>.
+    Found 4-bit register for signal <DEALERCARDS<1>>.
+    Found 4-bit register for signal <DEALERCARDS<0>>.
+    Found 4-bit register for signal <PCARD>.
+    Found 4-bit register for signal <DCARD>.
+    Found 5-bit register for signal <PSCORE>.
+    Found 5-bit register for signal <DSCORE>.
+    Found 2-bit register for signal <RES>.
+    Found 3-bit register for signal <PLED>.
+    Found 3-bit register for signal <DLED>.
+    Found 3-bit register for signal <PTOTAL>.
+    Found 3-bit register for signal <DTOTAL>.
+    Found 4-bit register for signal <rand_temp>.
+    Found finite state machine <FSM_0> for signal <CSTATE>.
+    -----------------------------------------------------------------------
+    | States             | 19                                             |
+    | Transitions        | 85                                             |
+    | Inputs             | 34                                             |
+    | Outputs            | 16                                             |
+    | Clock              | SMCLK (rising_edge)                            |
+    | Reset              | RESET (positive)                               |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | idle                                           |
+    | Power Up State     | idle                                           |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 4-bit adder for signal <counter[3]_GND_5_o_add_0_OUT> created at line 89.
+    Found 4-bit adder for signal <n1242> created at line 91.
+    Found 4-bit adder for signal <rand_temp[2]_GND_5_o_add_4_OUT> created at line 94.
+    Found 26-bit adder for signal <CLKDIV[25]_GND_5_o_add_11_OUT> created at line 110.
+    Found 2-bit adder for signal <SEL[1]_GND_5_o_add_13_OUT> created at line 129.
+    Found 5-bit adder for signal <n1175> created at line 507.
+    Found 5-bit adder for signal <n1178> created at line 512.
+    Found 4-bit adder for signal <GND_5_o_GND_5_o_add_678_OUT> created at line 261.
+    Found 4-bit adder for signal <BUS_0114_GND_5_o_add_680_OUT> created at line 261.
+    Found 5-bit adder for signal <BUS_0182_GND_5_o_add_1039_OUT> created at line 605.
+    Found 5-bit adder for signal <BUS_0184_GND_5_o_add_1047_OUT> created at line 610.
+    Found 4-bit adder for signal <GND_5_o_GND_5_o_add_1052_OUT> created at line 261.
+    Found 4-bit adder for signal <BUS_0178_GND_5_o_add_1054_OUT> created at line 261.
+    Found 6-bit adder for signal <n0864> created at line 700.
+    Found 6-bit adder for signal <n0868> created at line 706.
+    Found 4-bit adder for signal <GND_5_o_GND_5_o_add_1430_OUT> created at line 261.
+    Found 4-bit adder for signal <BUS_0247_GND_5_o_add_1432_OUT> created at line 261.
+    Found 3-bit adder for signal <GAMEDECK[0][2]_GND_5_o_add_1474_OUT> created at line 296.
+    Found 3-bit adder for signal <GAMEDECK[1][2]_GND_5_o_add_1478_OUT> created at line 302.
+    Found 3-bit adder for signal <GAMEDECK[2][2]_GND_5_o_add_1482_OUT> created at line 308.
+    Found 3-bit adder for signal <GAMEDECK[3][2]_GND_5_o_add_1486_OUT> created at line 314.
+    Found 3-bit adder for signal <GAMEDECK[4][2]_GND_5_o_add_1490_OUT> created at line 320.
+    Found 3-bit adder for signal <GAMEDECK[5][2]_GND_5_o_add_1494_OUT> created at line 326.
+    Found 3-bit adder for signal <GAMEDECK[6][2]_GND_5_o_add_1498_OUT> created at line 332.
+    Found 3-bit adder for signal <GAMEDECK[7][2]_GND_5_o_add_1502_OUT> created at line 338.
+    Found 3-bit adder for signal <GAMEDECK[8][2]_GND_5_o_add_1506_OUT> created at line 344.
+    Found 3-bit adder for signal <GAMEDECK[9][2]_GND_5_o_add_1510_OUT> created at line 350.
+    Found 3-bit adder for signal <GAMEDECK[10][2]_GND_5_o_add_1514_OUT> created at line 356.
+    Found 3-bit adder for signal <GAMEDECK[11][2]_GND_5_o_add_1518_OUT> created at line 362.
+    Found 3-bit adder for signal <GAMEDECK[12][2]_GND_5_o_add_1522_OUT> created at line 368.
+    Found 2-bit adder for signal <PACECARD[1]_GND_5_o_add_1608_OUT> created at line 757.
+    Found 2-bit adder for signal <DACECARD[1]_GND_5_o_add_1765_OUT> created at line 780.
+    Found 5-bit adder for signal <n1256> created at line 791.
+    Found 6-bit adder for signal <n1264> created at line 791.
+    Found 7-bit adder for signal <n1311> created at line 791.
+    Found 7-bit adder for signal <n1059> created at line 791.
+    Found 5-bit adder for signal <n1258> created at line 792.
+    Found 6-bit adder for signal <n1266> created at line 792.
+    Found 7-bit adder for signal <n1323> created at line 792.
+    Found 7-bit adder for signal <n1063> created at line 792.
+    Found 7-bit adder for signal <n1065> created at line 796.
+    Found 7-bit adder for signal <n1070> created at line 801.
+    Found 4-bit adder for signal <GND_5_o_GND_5_o_add_1812_OUT> created at line 261.
+    Found 4-bit adder for signal <BUS_0320_GND_5_o_add_1814_OUT> created at line 261.
+    Found 3-bit adder for signal <DTOTAL[2]_GND_5_o_add_1821_OUT> created at line 812.
+    Found 3-bit adder for signal <PTOTAL[2]_GND_5_o_add_1826_OUT> created at line 815.
+    Found 4-bit adder for signal <GND_5_o_GND_5_o_add_1855_OUT> created at line 261.
+    Found 4-bit adder for signal <PSCORE[4]_GND_5_o_add_1857_OUT> created at line 261.
+    Found 4-bit adder for signal <GND_5_o_GND_5_o_add_1859_OUT> created at line 261.
+    Found 4-bit adder for signal <DSCORE[4]_GND_5_o_add_1861_OUT> created at line 261.
+    Found 2-bit subtractor for signal <GND_5_o_GND_5_o_sub_1794_OUT<1:0>> created at line 795.
+    Found 2-bit subtractor for signal <GND_5_o_GND_5_o_sub_1804_OUT<1:0>> created at line 800.
+    Found 16x7-bit Read Only RAM for signal <SEG>
+    Found 4-bit 4-to-1 multiplexer for signal <SEL[1]_GND_5_o_wide_mux_22_OUT> created at line 134.
+    Found 4-bit 15-to-1 multiplexer for signal <PCARD[3]_GND_5_o_wide_mux_1525_OUT> created at line 291.
+    Found 4-bit 15-to-1 multiplexer for signal <DCARD[3]_GND_5_o_wide_mux_1683_OUT> created at line 291.
+    Found 1-bit 4-to-1 multiplexer for signal <SEL[1]_DISPLAYDATA[15]_wide_mux_21_OUT[3]> created at line 134.
+    Found 1-bit 4-to-1 multiplexer for signal <SEL[1]_DISPLAYDATA[15]_wide_mux_21_OUT[2]> created at line 134.
+    Found 1-bit 4-to-1 multiplexer for signal <SEL[1]_DISPLAYDATA[15]_wide_mux_21_OUT[1]> created at line 134.
+    Found 1-bit 4-to-1 multiplexer for signal <SEL[1]_DISPLAYDATA[15]_wide_mux_21_OUT[0]> created at line 134.
+    Found 5-bit comparator greater for signal <PWR_5_o_BUS_0114_LessThan_664_o> created at line 504
+    Found 5-bit comparator greater for signal <PWR_5_o_BUS_0115_LessThan_671_o> created at line 509
+    Found 3-bit comparator greater for signal <PWR_5_o_BUS_0114_LessThan_678_o> created at line 260
+    Found 4-bit comparator greater for signal <GND_5_o_BUS_0114_LessThan_680_o> created at line 260
+    Found 5-bit comparator lessequal for signal <n0097> created at line 520
+    Found 5-bit comparator greater for signal <PWR_5_o_BUS_0114_LessThan_686_o> created at line 523
+    Found 5-bit comparator greater for signal <BUS_0114_BUS_0115_LessThan_693_o> created at line 532
+    Found 5-bit comparator greater for signal <BUS_0115_PWR_5_o_LessThan_694_o> created at line 532
+    Found 5-bit comparator greater for signal <BUS_0115_BUS_0114_LessThan_696_o> created at line 535
+    Found 5-bit comparator greater for signal <BUS_0114_PWR_5_o_LessThan_697_o> created at line 535
+    Found 5-bit comparator greater for signal <PWR_5_o_BUS_0115_LessThan_698_o> created at line 535
+    Found 5-bit comparator equal for signal <BUS_0115_BUS_0114_equal_700_o> created at line 538
+    Found 5-bit comparator greater for signal <PWR_5_o_BUS_0178_LessThan_1036_o> created at line 602
+    Found 5-bit comparator greater for signal <PWR_5_o_BUS_0180_LessThan_1044_o> created at line 607
+    Found 3-bit comparator greater for signal <PWR_5_o_BUS_0178_LessThan_1052_o> created at line 260
+    Found 4-bit comparator greater for signal <GND_5_o_BUS_0178_LessThan_1054_o> created at line 260
+    Found 5-bit comparator lessequal for signal <n0179> created at line 618
+    Found 5-bit comparator greater for signal <PWR_5_o_BUS_0178_LessThan_1060_o> created at line 621
+    Found 5-bit comparator greater for signal <BUS_0178_BUS_0180_LessThan_1067_o> created at line 630
+    Found 5-bit comparator greater for signal <BUS_0180_PWR_5_o_LessThan_1068_o> created at line 630
+    Found 5-bit comparator greater for signal <BUS_0180_BUS_0178_LessThan_1070_o> created at line 633
+    Found 5-bit comparator greater for signal <BUS_0178_PWR_5_o_LessThan_1071_o> created at line 633
+    Found 5-bit comparator greater for signal <PWR_5_o_BUS_0180_LessThan_1072_o> created at line 633
+    Found 5-bit comparator equal for signal <BUS_0180_BUS_0178_equal_1074_o> created at line 636
+    Found 5-bit comparator greater for signal <PWR_5_o_BUS_0247_LessThan_1412_o> created at line 697
+    Found 5-bit comparator greater for signal <PWR_5_o_BUS_0250_LessThan_1421_o> created at line 703
+    Found 3-bit comparator greater for signal <PWR_5_o_BUS_0247_LessThan_1430_o> created at line 260
+    Found 4-bit comparator greater for signal <GND_5_o_BUS_0247_LessThan_1432_o> created at line 260
+    Found 5-bit comparator lessequal for signal <n0261> created at line 713
+    Found 5-bit comparator greater for signal <PWR_5_o_BUS_0247_LessThan_1438_o> created at line 716
+    Found 5-bit comparator greater for signal <BUS_0247_BUS_0250_LessThan_1445_o> created at line 725
+    Found 5-bit comparator greater for signal <BUS_0250_PWR_5_o_LessThan_1446_o> created at line 725
+    Found 5-bit comparator greater for signal <BUS_0250_BUS_0247_LessThan_1448_o> created at line 728
+    Found 5-bit comparator greater for signal <BUS_0247_PWR_5_o_LessThan_1449_o> created at line 728
+    Found 5-bit comparator greater for signal <PWR_5_o_BUS_0250_LessThan_1450_o> created at line 728
+    Found 5-bit comparator equal for signal <BUS_0250_BUS_0247_equal_1452_o> created at line 731
+    Found 5-bit comparator greater for signal <PWR_5_o_BUS_0320_LessThan_1792_o> created at line 793
+    Found 5-bit comparator greater for signal <PWR_5_o_BUS_0324_LessThan_1802_o> created at line 798
+    Found 3-bit comparator greater for signal <PWR_5_o_BUS_0320_LessThan_1812_o> created at line 260
+    Found 4-bit comparator greater for signal <GND_5_o_BUS_0320_LessThan_1814_o> created at line 260
+    Found 5-bit comparator greater for signal <BUS_0320_BUS_0324_LessThan_1819_o> created at line 810
+    Found 5-bit comparator greater for signal <BUS_0324_PWR_5_o_LessThan_1820_o> created at line 810
+    Found 5-bit comparator greater for signal <PWR_5_o_BUS_0320_LessThan_1821_o> created at line 810
+    Found 5-bit comparator greater for signal <BUS_0324_BUS_0320_LessThan_1825_o> created at line 813
+    Found 5-bit comparator greater for signal <PWR_5_o_BUS_0324_LessThan_1826_o> created at line 813
+    Found 5-bit comparator equal for signal <BUS_0324_BUS_0320_equal_1828_o> created at line 816
+    Found 3-bit comparator greater for signal <PWR_5_o_PSCORE[4]_LessThan_1855_o> created at line 260
+    Found 4-bit comparator greater for signal <GND_5_o_PSCORE[4]_LessThan_1857_o> created at line 260
+    Found 3-bit comparator greater for signal <PWR_5_o_DSCORE[4]_LessThan_1859_o> created at line 260
+    Found 4-bit comparator greater for signal <GND_5_o_DSCORE[4]_LessThan_1861_o> created at line 260
+    Summary:
+	inferred   1 RAM(s).
+	inferred  52 Adder/Subtractor(s).
+	inferred 189 D-type flip-flop(s).
+	inferred  50 Comparator(s).
+	inferred 199 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <BLACKJACK> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 16x7-bit single-port Read Only RAM                    : 1
+# Adders/Subtractors                                   : 52
+ 2-bit adder                                           : 3
+ 2-bit subtractor                                      : 2
+ 26-bit adder                                          : 1
+ 3-bit adder                                           : 15
+ 4-bit adder                                           : 15
+ 5-bit adder                                           : 6
+ 6-bit adder                                           : 4
+ 7-bit adder                                           : 6
+# Registers                                            : 52
+ 1-bit register                                        : 10
+ 16-bit register                                       : 1
+ 2-bit register                                        : 4
+ 26-bit register                                       : 1
+ 3-bit register                                        : 17
+ 4-bit register                                        : 17
+ 5-bit register                                        : 2
+# Comparators                                          : 50
+ 3-bit comparator greater                              : 6
+ 4-bit comparator greater                              : 6
+ 5-bit comparator equal                                : 4
+ 5-bit comparator greater                              : 31
+ 5-bit comparator lessequal                            : 3
+# Multiplexers                                         : 199
+ 1-bit 2-to-1 multiplexer                              : 63
+ 1-bit 4-to-1 multiplexer                              : 4
+ 16-bit 2-to-1 multiplexer                             : 24
+ 2-bit 2-to-1 multiplexer                              : 7
+ 3-bit 2-to-1 multiplexer                              : 56
+ 4-bit 15-to-1 multiplexer                             : 2
+ 4-bit 2-to-1 multiplexer                              : 26
+ 4-bit 4-to-1 multiplexer                              : 1
+ 5-bit 2-to-1 multiplexer                              : 16
+# FSMs                                                 : 1
+# Xors                                                 : 1
+ 1-bit xor2                                            : 1
+
+=========================================================================
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <BLACKJACK>.
+The following registers are absorbed into counter <CLKDIV>: 1 register on signal <CLKDIV>.
+The following registers are absorbed into counter <DACECARD>: 1 register on signal <DACECARD>.
+The following registers are absorbed into counter <PTOTAL>: 1 register on signal <PTOTAL>.
+The following registers are absorbed into counter <counter>: 1 register on signal <counter>.
+The following registers are absorbed into counter <DTOTAL>: 1 register on signal <DTOTAL>.
+The following registers are absorbed into counter <SEL>: 1 register on signal <SEL>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_SEG> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 7-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <DIGIT>         |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <SEG>           |          |
+    -----------------------------------------------------------------------
+Unit <BLACKJACK> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 16x7-bit single-port distributed Read Only RAM        : 1
+# Adders/Subtractors                                   : 48
+ 2-bit adder                                           : 2
+ 2-bit subtractor                                      : 1
+ 26-bit adder                                          : 1
+ 3-bit adder                                           : 13
+ 4-bit adder                                           : 15
+ 5-bit adder                                           : 16
+# Counters                                             : 6
+ 2-bit down counter                                    : 1
+ 2-bit up counter                                      : 1
+ 26-bit up counter                                     : 1
+ 3-bit up counter                                      : 2
+ 4-bit up counter                                      : 1
+# Registers                                            : 149
+ Flip-Flops                                            : 149
+# Comparators                                          : 50
+ 3-bit comparator greater                              : 6
+ 4-bit comparator greater                              : 6
+ 5-bit comparator equal                                : 4
+ 5-bit comparator greater                              : 31
+ 5-bit comparator lessequal                            : 3
+# Multiplexers                                         : 196
+ 1-bit 2-to-1 multiplexer                              : 63
+ 1-bit 4-to-1 multiplexer                              : 4
+ 16-bit 2-to-1 multiplexer                             : 24
+ 2-bit 2-to-1 multiplexer                              : 6
+ 3-bit 2-to-1 multiplexer                              : 54
+ 4-bit 15-to-1 multiplexer                             : 2
+ 4-bit 2-to-1 multiplexer                              : 26
+ 4-bit 4-to-1 multiplexer                              : 1
+ 5-bit 2-to-1 multiplexer                              : 16
+# FSMs                                                 : 1
+# Xors                                                 : 1
+ 1-bit xor2                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <FSM_0> on signal <CSTATE[1:5]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ idle  | 00000
+ dc1   | 00001
+ dc2   | 00010
+ dc3   | 00011
+ dc4   | 00100
+ dc5   | 00101
+ pc1   | 00110
+ pc2   | 00111
+ pc3   | 01000
+ pc4   | 01001
+ pc5   | 01010
+ card2 | 01011
+ card3 | 01100
+ card4 | 01101
+ card5 | 01110
+ card6 | 01111
+ pwin  | 10000
+ dwin  | 10001
+ gamed | 10010
+-------------------
+INFO:Xst:2261 - The FF/Latch <DISPLAYDATA_6> in Unit <BLACKJACK> is equivalent to the following FF/Latch, which will be removed : <DISPLAYDATA_11> 
+INFO:Xst:2261 - The FF/Latch <DISPLAYDATA_12> in Unit <BLACKJACK> is equivalent to the following 3 FFs/Latches, which will be removed : <DISPLAYDATA_13> <DISPLAYDATA_14> <DISPLAYDATA_15> 
+
+Optimizing unit <BLACKJACK> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block BLACKJACK, actual ratio is 8.
+FlipFlop DEALERCARDS_0_0 has been replicated 2 time(s)
+FlipFlop DEALERCARDS_1_0 has been replicated 2 time(s)
+FlipFlop PLAYERCARDS_0_0 has been replicated 2 time(s)
+FlipFlop PLAYERCARDS_1_0 has been replicated 2 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 198
+ Flip-Flops                                            : 198
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : BLACKJACK.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 825
+#      GND                         : 1
+#      INV                         : 5
+#      LUT1                        : 50
+#      LUT2                        : 29
+#      LUT3                        : 80
+#      LUT4                        : 84
+#      LUT5                        : 141
+#      LUT6                        : 341
+#      MUXCY                       : 50
+#      MUXF7                       : 13
+#      VCC                         : 1
+#      XORCY                       : 30
+# FlipFlops/Latches                : 198
+#      FD                          : 51
+#      FDC                         : 5
+#      FDE                         : 138
+#      FDR                         : 4
+# Clock Buffers                    : 2
+#      BUFG                        : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 24
+#      IBUF                        : 5
+#      OBUF                        : 19
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx16csg324-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             198  out of  18224     1%  
+ Number of Slice LUTs:                  730  out of   9112     8%  
+    Number used as Logic:               730  out of   9112     8%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    787
+   Number with an unused Flip Flop:     589  out of    787    74%  
+   Number with an unused LUT:            57  out of    787     7%  
+   Number of fully used LUT-FF pairs:   141  out of    787    17%  
+   Number of unique control sets:        41
+
+IO Utilization: 
+ Number of IOs:                          25
+ Number of bonded IOBs:                  25  out of    232    10%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                2  out of     16    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+CLK                                | BUFGP                  | 30    |
+SMCLK                              | BUFG                   | 143   |
+DBCLK                              | NONE(SHIFTR2_0)        | 15    |
+RGCLK                              | NONE(rand_temp_0)      | 8     |
+SGCLK                              | NONE(SEL_0)            | 2     |
+-----------------------------------+------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 14.241ns (Maximum Frequency: 70.220MHz)
+   Minimum input arrival time before clock: 7.580ns
+   Maximum output required time after clock: 8.084ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK'
+  Clock period: 2.558ns (frequency: 390.930MHz)
+  Total number of paths / destination ports: 442 / 30
+-------------------------------------------------------------------------
+Delay:               2.558ns (Levels of Logic = 27)
+  Source:            CLKDIV_0 (FF)
+  Destination:       SMCLK (FF)
+  Source Clock:      CLK rising
+  Destination Clock: CLK rising
+
+  Data Path: CLKDIV_0 to SMCLK
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.525   0.725  CLKDIV_0 (CLKDIV_0)
+     INV:I->O              1   0.255   0.000  Madd_CLKDIV[25]_GND_5_o_add_11_OUT_lut<0>_INV_0 (Madd_CLKDIV[25]_GND_5_o_add_11_OUT_lut<0>)
+     MUXCY:S->O            1   0.215   0.000  Madd_CLKDIV[25]_GND_5_o_add_11_OUT_cy<0> (Madd_CLKDIV[25]_GND_5_o_add_11_OUT_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_CLKDIV[25]_GND_5_o_add_11_OUT_cy<1> (Madd_CLKDIV[25]_GND_5_o_add_11_OUT_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_CLKDIV[25]_GND_5_o_add_11_OUT_cy<2> (Madd_CLKDIV[25]_GND_5_o_add_11_OUT_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_CLKDIV[25]_GND_5_o_add_11_OUT_cy<3> (Madd_CLKDIV[25]_GND_5_o_add_11_OUT_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_CLKDIV[25]_GND_5_o_add_11_OUT_cy<4> (Madd_CLKDIV[25]_GND_5_o_add_11_OUT_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_CLKDIV[25]_GND_5_o_add_11_OUT_cy<5> (Madd_CLKDIV[25]_GND_5_o_add_11_OUT_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_CLKDIV[25]_GND_5_o_add_11_OUT_cy<6> (Madd_CLKDIV[25]_GND_5_o_add_11_OUT_cy<6>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_CLKDIV[25]_GND_5_o_add_11_OUT_cy<7> (Madd_CLKDIV[25]_GND_5_o_add_11_OUT_cy<7>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_CLKDIV[25]_GND_5_o_add_11_OUT_cy<8> (Madd_CLKDIV[25]_GND_5_o_add_11_OUT_cy<8>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_CLKDIV[25]_GND_5_o_add_11_OUT_cy<9> (Madd_CLKDIV[25]_GND_5_o_add_11_OUT_cy<9>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_CLKDIV[25]_GND_5_o_add_11_OUT_cy<10> (Madd_CLKDIV[25]_GND_5_o_add_11_OUT_cy<10>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_CLKDIV[25]_GND_5_o_add_11_OUT_cy<11> (Madd_CLKDIV[25]_GND_5_o_add_11_OUT_cy<11>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_CLKDIV[25]_GND_5_o_add_11_OUT_cy<12> (Madd_CLKDIV[25]_GND_5_o_add_11_OUT_cy<12>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_CLKDIV[25]_GND_5_o_add_11_OUT_cy<13> (Madd_CLKDIV[25]_GND_5_o_add_11_OUT_cy<13>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_CLKDIV[25]_GND_5_o_add_11_OUT_cy<14> (Madd_CLKDIV[25]_GND_5_o_add_11_OUT_cy<14>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_CLKDIV[25]_GND_5_o_add_11_OUT_cy<15> (Madd_CLKDIV[25]_GND_5_o_add_11_OUT_cy<15>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_CLKDIV[25]_GND_5_o_add_11_OUT_cy<16> (Madd_CLKDIV[25]_GND_5_o_add_11_OUT_cy<16>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_CLKDIV[25]_GND_5_o_add_11_OUT_cy<17> (Madd_CLKDIV[25]_GND_5_o_add_11_OUT_cy<17>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_CLKDIV[25]_GND_5_o_add_11_OUT_cy<18> (Madd_CLKDIV[25]_GND_5_o_add_11_OUT_cy<18>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_CLKDIV[25]_GND_5_o_add_11_OUT_cy<19> (Madd_CLKDIV[25]_GND_5_o_add_11_OUT_cy<19>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_CLKDIV[25]_GND_5_o_add_11_OUT_cy<20> (Madd_CLKDIV[25]_GND_5_o_add_11_OUT_cy<20>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_CLKDIV[25]_GND_5_o_add_11_OUT_cy<21> (Madd_CLKDIV[25]_GND_5_o_add_11_OUT_cy<21>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_CLKDIV[25]_GND_5_o_add_11_OUT_cy<22> (Madd_CLKDIV[25]_GND_5_o_add_11_OUT_cy<22>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_CLKDIV[25]_GND_5_o_add_11_OUT_cy<23> (Madd_CLKDIV[25]_GND_5_o_add_11_OUT_cy<23>)
+     MUXCY:CI->O           0   0.023   0.000  Madd_CLKDIV[25]_GND_5_o_add_11_OUT_cy<24> (Madd_CLKDIV[25]_GND_5_o_add_11_OUT_cy<24>)
+     XORCY:CI->O           1   0.206   0.000  Madd_CLKDIV[25]_GND_5_o_add_11_OUT_xor<25> (CLKDIV[25]_GND_5_o_add_11_OUT<25>)
+     FD:D                      0.074          SMCLK
+    ----------------------------------------
+    Total                      2.558ns (1.833ns logic, 0.725ns route)
+                                       (71.7% logic, 28.3% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'SMCLK'
+  Clock period: 14.241ns (frequency: 70.220MHz)
+  Total number of paths / destination ports: 602572 / 281
+-------------------------------------------------------------------------
+Delay:               14.241ns (Levels of Logic = 11)
+  Source:            DEALERCARDS_1_1 (FF)
+  Destination:       DTOTAL_0 (FF)
+  Source Clock:      SMCLK rising
+  Destination Clock: SMCLK rising
+
+  Data Path: DEALERCARDS_1_1 to DTOTAL_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q             11   0.525   1.147  DEALERCARDS_1_1 (DEALERCARDS_1_1)
+     LUT4:I2->O            8   0.250   1.172  Madd_n1258_xor<1>11 (Madd_BUS_0184_GND_5_o_add_1047_OUT_lut<1>)
+     LUT6:I3->O           17   0.235   1.209  Madd_n1266_Madd_xor<2>11 (Madd_n0868_Madd_lut<2>)
+     LUT6:I5->O            3   0.254   0.765  Madd_n1323_Madd_cy<2>11 (Madd_n1323_Madd_cy<2>)
+     MUXF7:S->O           11   0.185   1.147  Madd_n1323_Madd_xor<4>11 (Madd_n1063_Madd_lut<4>)
+     LUT6:I4->O            7   0.250   0.910  PWR_5_o_GND_5_o_AND_26_o (PWR_5_o_GND_5_o_AND_26_o)
+     LUT6:I5->O            7   0.254   1.340  Mmux_BUS_0324_BUS_0332_mux_1810_OUT11 (BUS_0324_BUS_0332_mux_1810_OUT<0>)
+     LUT5:I0->O            2   0.254   0.726  PWR_5_o_BUS_0320_OR_41_o5111 (PWR_5_o_BUS_0320_OR_41_o511)
+     LUT6:I5->O            1   0.254   0.790  PWR_5_o_BUS_0320_OR_41_o5 (PWR_5_o_BUS_0320_OR_41_o5)
+     LUT5:I3->O            9   0.250   0.976  PWR_5_o_BUS_0320_OR_41_o10 (PWR_5_o_BUS_0320_OR_41_o)
+     LUT5:I4->O            3   0.254   0.766  _n5695_inv7_rstpot (_n5695_inv7_rstpot)
+     LUT5:I4->O            1   0.254   0.000  DTOTAL_2_dpot (DTOTAL_2_dpot)
+     FDE:D                     0.074          DTOTAL_2
+    ----------------------------------------
+    Total                     14.241ns (3.293ns logic, 10.948ns route)
+                                       (23.1% logic, 76.9% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'DBCLK'
+  Clock period: 1.855ns (frequency: 539.083MHz)
+  Total number of paths / destination ports: 21 / 12
+-------------------------------------------------------------------------
+Delay:               1.855ns (Levels of Logic = 1)
+  Source:            SHIFTR2_3 (FF)
+  Destination:       DBSTAND (FF)
+  Source Clock:      DBCLK rising
+  Destination Clock: DBCLK rising
+
+  Data Path: SHIFTR2_3 to DBSTAND
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.525   1.002  SHIFTR2_3 (SHIFTR2_3)
+     LUT4:I0->O            1   0.254   0.000  SHIFTR2[3]_INV_4_o1 (SHIFTR2[3]_INV_4_o)
+     FD:D                      0.074          DBSTAND
+    ----------------------------------------
+    Total                      1.855ns (0.853ns logic, 1.002ns route)
+                                       (46.0% logic, 54.0% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'RGCLK'
+  Clock period: 3.444ns (frequency: 290.360MHz)
+  Total number of paths / destination ports: 57 / 12
+-------------------------------------------------------------------------
+Delay:               3.444ns (Levels of Logic = 2)
+  Source:            counter_0 (FF)
+  Destination:       rand_temp_2 (FF)
+  Source Clock:      RGCLK rising
+  Destination Clock: RGCLK rising
+
+  Data Path: counter_0 to rand_temp_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              5   0.525   1.117  counter_0 (counter_0)
+     LUT4:I0->O            8   0.254   1.220  counter[3]_PWR_5_o_equal_2_o<3>1 (counter[3]_PWR_5_o_equal_2_o)
+     LUT5:I1->O            1   0.254   0.000  Mmux_rand_temp[2]_rand_temp[2]_mux_6_OUT41 (rand_temp[2]_rand_temp[2]_mux_6_OUT<3>)
+     FD:D                      0.074          rand_temp_3
+    ----------------------------------------
+    Total                      3.444ns (1.107ns logic, 2.337ns route)
+                                       (32.1% logic, 67.9% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'SGCLK'
+  Clock period: 2.661ns (frequency: 375.799MHz)
+  Total number of paths / destination ports: 3 / 2
+-------------------------------------------------------------------------
+Delay:               2.661ns (Levels of Logic = 1)
+  Source:            SEL_0 (FF)
+  Destination:       SEL_0 (FF)
+  Source Clock:      SGCLK rising
+  Destination Clock: SGCLK rising
+
+  Data Path: SEL_0 to SEL_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              14   0.525   1.126  SEL_0 (SEL_0)
+     INV:I->O              1   0.255   0.681  Mcount_SEL_xor<0>11_INV_0 (Result<0>2)
+     FD:D                      0.074          SEL_0
+    ----------------------------------------
+    Total                      2.661ns (0.854ns logic, 1.807ns route)
+                                       (32.1% logic, 67.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'SMCLK'
+  Total number of paths / destination ports: 268 / 149
+-------------------------------------------------------------------------
+Offset:              7.580ns (Levels of Logic = 4)
+  Source:            RESET (PAD)
+  Destination:       PACECARD_0 (FF)
+  Destination Clock: SMCLK rising
+
+  Data Path: RESET to PACECARD_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            31   1.328   1.933  RESET_IBUF (RESET_IBUF)
+     LUT6:I1->O           13   0.254   1.528  _n2288_inv11 (_n2288_inv1)
+     LUT5:I0->O            2   0.254   1.002  _n1987_inv31 (_n1987_inv3)
+     LUT5:I1->O            2   0.254   0.725  _n1987_inv3 (_n1987_inv)
+     FDE:CE                    0.302          PACECARD_0
+    ----------------------------------------
+    Total                      7.580ns (2.392ns logic, 5.188ns route)
+                                       (31.6% logic, 68.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'DBCLK'
+  Total number of paths / destination ports: 3 / 3
+-------------------------------------------------------------------------
+Offset:              2.083ns (Levels of Logic = 1)
+  Source:            STAND (PAD)
+  Destination:       SHIFTR2_3 (FF)
+  Destination Clock: DBCLK rising
+
+  Data Path: STAND to SHIFTR2_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.328   0.681  STAND_IBUF (STAND_IBUF)
+     FD:D                      0.074          SHIFTR2_3
+    ----------------------------------------
+    Total                      2.083ns (1.402ns logic, 0.681ns route)
+                                       (67.3% logic, 32.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'SMCLK'
+  Total number of paths / destination ports: 166 / 19
+-------------------------------------------------------------------------
+Offset:              7.589ns (Levels of Logic = 4)
+  Source:            DISPLAYDATA_6 (FF)
+  Destination:       SEG<6> (PAD)
+  Source Clock:      SMCLK rising
+
+  Data Path: DISPLAYDATA_6 to SEG<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              4   0.525   0.912  DISPLAYDATA_6 (DISPLAYDATA_6)
+     LUT3:I1->O            1   0.250   0.682  Mmux_DIGIT<2>1_SW0 (N57)
+     LUT6:I5->O            7   0.254   1.138  Mmux_DIGIT<2>1 (DIGIT<2>)
+     LUT4:I1->O            1   0.235   0.681  Mram_SEG111 (SEG_1_OBUF)
+     OBUF:I->O                 2.912          SEG_1_OBUF (SEG<1>)
+    ----------------------------------------
+    Total                      7.589ns (4.176ns logic, 3.413ns route)
+                                       (55.0% logic, 45.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'SGCLK'
+  Total number of paths / destination ports: 92 / 11
+-------------------------------------------------------------------------
+Offset:              8.084ns (Levels of Logic = 4)
+  Source:            SEL_0 (FF)
+  Destination:       SEG<6> (PAD)
+  Source Clock:      SGCLK rising
+
+  Data Path: SEL_0 to SEG<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              14   0.525   1.355  SEL_0 (SEL_0)
+     LUT3:I0->O            1   0.235   0.682  Mmux_DIGIT<0>1_SW0 (N53)
+     LUT6:I5->O            7   0.254   1.186  Mmux_DIGIT<0>1 (DIGIT<0>)
+     LUT4:I0->O            1   0.254   0.681  Mram_SEG41 (SEG_4_OBUF)
+     OBUF:I->O                 2.912          SEG_4_OBUF (SEG<4>)
+    ----------------------------------------
+    Total                      8.084ns (4.180ns logic, 3.904ns route)
+                                       (51.7% logic, 48.3% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock CLK
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLK            |    2.558|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock DBCLK
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+DBCLK          |    1.855|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock RGCLK
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+RGCLK          |    3.444|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock SGCLK
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+SGCLK          |    2.661|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock SMCLK
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+DBCLK          |    5.857|         |         |         |
+RGCLK          |    2.005|         |         |         |
+SMCLK          |   14.241|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 30.00 secs
+Total CPU time to Xst completion: 30.24 secs
+ 
+--> 
+
+Total memory usage is 268572 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    5 (   0 filtered)
+

@@ -1,0 +1,205 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/EriveltonDell/Documents/Western Michigan University/ECE 5510/Programs/ALU
+Eadder
+Z1 w1400089605
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z4 8C:/Users/EriveltonDell/Documents/Western Michigan University/ECE 5510/Programs/ALU/ALU.vhd
+Z5 FC:/Users/EriveltonDell/Documents/Western Michigan University/ECE 5510/Programs/ALU/ALU.vhd
+l0
+L64
+VYnBZ58mi1<Uof1;SJW7H^1
+!s100 g;?zTKGIKFE@U@DM<[Rf=2
+Z6 OP;C;10.3a;59
+32
+Z7 !s110 1400089903
+!i10b 1
+Z8 !s108 1400089903.137000
+Z9 !s90 -reportprogress|300|-work|work|C:/Users/EriveltonDell/Documents/Western Michigan University/ECE 5510/Programs/ALU/ALU.vhd|
+Z10 !s107 C:/Users/EriveltonDell/Documents/Western Michigan University/ECE 5510/Programs/ALU/ALU.vhd|
+!i113 1
+Z11 o-work work -O0
+Z12 tExplicit 1
+Abehavioral
+R2
+R3
+DEx4 work 5 adder 0 22 YnBZ58mi1<Uof1;SJW7H^1
+l84
+L68
+VzCOD74fZe5aD>VJ55Hd[X3
+!s100 iO41@Y9g21G_]j=JBEL8J0
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Ealu
+R1
+R2
+R3
+R0
+R4
+R5
+l0
+L95
+VhQfD4S6R<699YB0FaXE3V0
+!s100 ]bYSk?SL<b:cc^W[;0JQf3
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Abehavioral
+R2
+R3
+DEx4 work 3 alu 0 22 hQfD4S6R<699YB0FaXE3V0
+l112
+L106
+V[Y48EKojj4cW]IMWM65RU1
+!s100 >7BnAcm4FH=YXnA4ba38l2
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Eand_2i
+R1
+R2
+R3
+R0
+R4
+R5
+l0
+L25
+VKEng>j01RBT^3<IFL]2?b3
+!s100 Hg2ZgamV<93bifJdfNnAU3
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Abehavioral
+R2
+R3
+DEx4 work 6 and_2i 0 22 KEng>j01RBT^3<IFL]2?b3
+l30
+L29
+VXFJ8?_b8<<@eeNB8@^F781
+!s100 aJ7NjGAM8LI9HA4azm]zb3
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Eor_3i
+R1
+R2
+R3
+R0
+R4
+R5
+l0
+L38
+VKRm?<ZT0_3o;YQ^G5YlG=0
+!s100 ^RTidzE^?:J20LKLO6bVT3
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Abehavioral
+R2
+R3
+DEx4 work 5 or_3i 0 22 KRm?<ZT0_3o;YQ^G5YlG=0
+l43
+L42
+Vl3ldR3ogK^H28m?<kOYPi2
+!s100 B7K_iR<c?;5`79U9U:VSn2
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Exor_3i
+R1
+R2
+R3
+R0
+R4
+R5
+l0
+L51
+Vh[kI6]J;nM9FZ0>NLTHzX2
+!s100 =U9i_VJO5JMg:E?Xk4SLh3
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Abehavioral
+R2
+R3
+DEx4 work 6 xor_3i 0 22 h[kI6]J;nM9FZ0>NLTHzX2
+l56
+L55
+VKkk[<@E8I=l6=O7cgk<`l0
+!s100 _Kda]M75WE?hbnd3W:o003
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12

@@ -1,0 +1,127 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/EriveltonDell/Documents/Western Michigan University/ECE 5510/Programs/BinaryCounter
+Ecount
+Z1 w1400598190
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z4 8C:/Users/EriveltonDell/Documents/Western Michigan University/ECE 5510/Programs/BinaryCounter/Counter_vhdl.vhd
+Z5 FC:/Users/EriveltonDell/Documents/Western Michigan University/ECE 5510/Programs/BinaryCounter/Counter_vhdl.vhd
+l0
+L39
+VbL__QeMogb@=Yne`RzXRG0
+!s100 e0m1EA^QRJfhgQ1ad@[HY2
+Z6 OP;C;10.3a;59
+32
+Z7 !s110 1400598213
+!i10b 1
+Z8 !s108 1400598212.370000
+Z9 !s90 -reportprogress|300|-work|work|C:/Users/EriveltonDell/Documents/Western Michigan University/ECE 5510/Programs/BinaryCounter/Counter_vhdl.vhd|
+Z10 !s107 C:/Users/EriveltonDell/Documents/Western Michigan University/ECE 5510/Programs/BinaryCounter/Counter_vhdl.vhd|
+!i113 1
+Z11 o-work work -O0
+Z12 tExplicit 1
+Abehavioral
+R2
+R3
+Z13 DEx4 work 5 count 0 22 bL__QeMogb@=Yne`RzXRG0
+l53
+L44
+Z14 VJQ`l<>j:9NdnoiK`NKAh@3
+Z15 !s100 >D9WU24Ji^R[i@B;HF]UX0
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Ecounter_vhdl
+R1
+R2
+R3
+R0
+R4
+R5
+l0
+L74
+Vgc3fQQPlz8hZ_kVA8;J5Y3
+!s100 ^h4fC<K2zNX^UNEAhjYa71
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Abehavioral
+R2
+R3
+Z16 DEx4 work 12 counter_vhdl 0 22 gc3fQQPlz8hZ_kVA8;J5Y3
+l92
+L85
+VziQ2Me:nOl4k<]Vnj3zHC0
+!s100 ZONVQ1l@HQWnVPADBlN3S1
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Efulladder
+R1
+R2
+R3
+R0
+R4
+R5
+l0
+L23
+V`=6:F?=bKYg`I:LNdl=3@2
+!s100 T<mEn<YdXX[MH6J>[XR^S1
+R6
+32
+Z17 !s110 1400598212
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Abehavioral
+R2
+R3
+Z18 DEx4 work 9 fulladder 0 22 `=6:F?=bKYg`I:LNdl=3@2
+l30
+L28
+Z19 VSK1LiVk4DadN0m5H1:6910
+Z20 !s100 e::co;L[9ild`MMUfM;gH3
+R6
+32
+R17
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12

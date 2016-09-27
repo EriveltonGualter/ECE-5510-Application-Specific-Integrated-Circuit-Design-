@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "C:/Users/EriveltonDell/Documents/Western Michigan University/ECE 5510/Programs/random/random.xst" -ofn "C:/Users/EriveltonDell/Documents/Western Michigan University/ECE 5510/Programs/random/random.syr" 
+netgen -intstyle ise -ar Structure -tm random -w -dir netgen/synthesis -ofmt vhdl -sim random.ngc random_synthesis.vhd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx16-csg324-2 "random.ngc" random.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o random_map.ncd random.ngd random.pcf 
+par -w -intstyle ise -ol high -mt off random_map.ncd random.ncd random.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml random.twx random.ncd -o random.twr random.pcf 

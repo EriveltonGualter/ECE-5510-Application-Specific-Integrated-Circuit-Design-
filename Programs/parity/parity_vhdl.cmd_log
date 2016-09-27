@@ -1,0 +1,12 @@
+xst -intstyle ise -ifn "C:/Users/EriveltonDell/Documents/Western Michigan University/ECE 5510/Programs/parity/parity_vhdl.xst" -ofn "C:/Users/EriveltonDell/Documents/Western Michigan University/ECE 5510/Programs/parity/parity_vhdl.syr" 
+netgen -intstyle ise -ar Structure -tm parity_vhdl -w -dir netgen/synthesis -ofmt vhdl -sim parity_vhdl.ngc parity_vhdl_synthesis.vhd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx16-csg324-2 "parity_vhdl.ngc" parity_vhdl.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o parity_vhdl_map.ncd parity_vhdl.ngd parity_vhdl.pcf 
+par -w -intstyle ise -ol high -mt off parity_vhdl_map.ncd parity_vhdl.ncd parity_vhdl.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml parity_vhdl.twx parity_vhdl.ncd -o parity_vhdl.twr parity_vhdl.pcf 
+xst -intstyle ise -ifn "C:/Users/EriveltonDell/Documents/Western Michigan University/ECE 5510/Programs/parity/parity_vhdl.xst" -ofn "C:/Users/EriveltonDell/Documents/Western Michigan University/ECE 5510/Programs/parity/parity_vhdl.syr" 
+netgen -intstyle ise -ar Structure -tm parity_vhdl -w -dir netgen/synthesis -ofmt vhdl -sim parity_vhdl.ngc parity_vhdl_synthesis.vhd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx16-csg324-2 "parity_vhdl.ngc" parity_vhdl.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o parity_vhdl_map.ncd parity_vhdl.ngd parity_vhdl.pcf 
+par -w -intstyle ise -ol high -mt off parity_vhdl_map.ncd parity_vhdl.ncd parity_vhdl.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml parity_vhdl.twx parity_vhdl.ncd -o parity_vhdl.twr parity_vhdl.pcf 

@@ -1,0 +1,61 @@
+
+# PlanAhead Generated physical constraints 
+
+NET "A" LOC = T10;
+
+# PlanAhead Generated IO constraints 
+
+NET "A" IOSTANDARD = LVCMOS33;
+
+# PlanAhead Generated physical constraints 
+
+NET "B" LOC = T9;
+
+# PlanAhead Generated IO constraints 
+
+NET "B" IOSTANDARD = LVCMOS33;
+
+# PlanAhead Generated physical constraints 
+
+NET "C" LOC = V9;
+
+# PlanAhead Generated IO constraints 
+
+NET "C" IOSTANDARD = LVCMOS33;
+NET "CLK" IOSTANDARD = LVCMOS33;
+
+# PlanAhead Generated physical constraints 
+
+NET "CLR" LOC = M8;
+NET "D" LOC = N8;
+NET "ENP" LOC = U8;
+NET "ENT" LOC = V8;
+NET "load" LOC = T5;
+
+# PlanAhead Generated IO constraints 
+
+NET "load" IOSTANDARD = LVCMOS33;
+NET "ENP" IOSTANDARD = LVCMOS33;
+NET "ENT" IOSTANDARD = LVCMOS33;
+NET "D" IOSTANDARD = LVCMOS33;
+NET "CLR" IOSTANDARD = LVCMOS33;
+
+# PlanAhead Generated physical constraints 
+
+NET "Qa" LOC = U16;
+NET "Qb" LOC = V16;
+
+# PlanAhead Generated IO constraints 
+
+NET "Qa" IOSTANDARD = LVCMOS33;
+NET "Qb" IOSTANDARD = LVCMOS33;
+NET "Qc" IOSTANDARD = LVCMOS33;
+NET "Qd" IOSTANDARD = LVCMOS33;
+NET "Rco" IOSTANDARD = LVCMOS33;
+
+# PlanAhead Generated physical constraints 
+
+NET "Qc" LOC = U15;
+NET "Qd" LOC = V15;
+NET "Rco" LOC = M11;
+NET "CLK" LOC = C9;
